@@ -17,7 +17,7 @@
 ```html
 <template>
   <div class="parent-pi">
-    Parent
+    二爷
     <Child />
   </div>
 </template>
@@ -33,7 +33,7 @@ export default {
   provide: {
     house: '别墅',
     car: '跑车',
-    money: '小目标'
+    money: '10个亿'
   }
 }
 </script>
@@ -54,7 +54,7 @@ export default {
 <!-- 子组件 Child.vue -->
 <template>
   <div class="child-pi">
-    Child: <br>
+    王多鱼: <br>
     {{house}} - {{car}} - {{money}}
   </div>
 </template>

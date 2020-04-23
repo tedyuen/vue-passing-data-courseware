@@ -1,7 +1,7 @@
 <!-- 子组件 Child.vue -->
 <template>
   <div class="child-pi">
-    Child: <br>
+    王多鱼: <br>
     {{house}} - {{car}} - {{money}}
   </div>
 </template>

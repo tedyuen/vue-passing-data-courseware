@@ -1,6 +1,6 @@
 <template>
   <div class="parent-pi">
-    Parent
+    亲爷
     <Child />
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
   provide: {
     // house: '别墅',
     // car: '跑车',
-    // money: '小目标'
+    // money: '10个亿'
   }
 }
 </script>

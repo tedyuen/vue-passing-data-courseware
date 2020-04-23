@@ -7,3 +7,6 @@
 5. 依赖注入 `provide` + `inject`(高阶组件/组件库用的多)
 6. `$parent` 和 `$children` 和 `refs`
 7. `vuex` (中心化状态管理方案，大型单页应用常用)
+
+
+<img :src="$withBase('/images/mind.png')" alt="思维导图" />
