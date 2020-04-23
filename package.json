@@ -1,0 +1,13 @@
+{
+  "name": "courseware",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vuepress dev doc",
+    "build": "vuepress build doc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
+}
