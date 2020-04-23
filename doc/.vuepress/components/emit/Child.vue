@@ -1,6 +1,6 @@
 <!-- 子组件 Child.vue -->
 <template>
-  <div class="child">
+  <div class="child-emit">
     <!-- 触发事件 -->
     Child: <button @click="doEvent">触发事件</button>
   </div>
@@ -18,8 +18,8 @@ export default {
 }
 </script>
 
-<style scope>
-.child {
+<style>
+.child-emit {
   width: 120px;
   padding: 5px;
   border: 1px solid #ff8c31;

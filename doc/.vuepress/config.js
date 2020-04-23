@@ -36,8 +36,12 @@ module.exports = {
               path: '/ATTR_LISTENERS.md'
             },
             {
-              title: '`provide` + `inject`',
+              title: 'provide + inject',
               path: '/PROVIDE_INJECT.md'
+            },
+            {
+              title: 'parent & children & refs',
+              path: '/PARENT_CHILDREN.md'
             }
           ]
         },

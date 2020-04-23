@@ -13,8 +13,8 @@
 1. **父组件**
 
 ```html
-<!-- 父组件 Parent.vue -->
 <template>
+  <!-- 父组件 Parent.vue -->
   <div class="parent">
     Parent
     <Child v-bind:myData="text"/>

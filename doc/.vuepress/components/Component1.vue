@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .comp-1 {
   width: 265px;
   padding: 15px;

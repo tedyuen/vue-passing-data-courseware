@@ -1,30 +1,30 @@
 <template>
-  <div class="parent-props">
+  <div class="parent-pi">
     Parent
-    <Child v-bind:myData="text"/>
+    <Child />
   </div>
 </template>
 
 <script>
-import Child from './props/Child.vue'
+import Child from './pi/Child.vue'
 
 export default {
   name: 'Parent',
   components: {
     Child
   },
-  data() {
-    return {
-      text: '三个荤菜'
-    }
+  provide: {
+    // house: '别墅',
+    // car: '跑车',
+    // money: '小目标'
   }
 }
 </script>
 
 <style>
-.parent-props {
+.parent-pi {
   margin-top: 10px;
-  width: 130px;
+  width: 160px;
   padding: 10px;
   border: 1px solid #00e09e;
 }

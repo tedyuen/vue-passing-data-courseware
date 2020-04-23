@@ -1,6 +1,6 @@
 <!--  父组件 Parent.vue -->
 <template>
-  <div class="parent">
+  <div class="parent-emit">
     <!-- 绑定事件到子组件上 -->
     Parent
     <Child v-on:myEvent="callEvent"/>
@@ -30,8 +30,8 @@ export default {
 }
 </script>
 
-<style scope>
-.parent {
+<style>
+.parent-emit {
   margin-top: 10px;
   width: 130px;
   padding: 10px;

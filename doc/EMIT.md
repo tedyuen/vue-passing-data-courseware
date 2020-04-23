@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .parent {
   margin-top: 10px;
   width: 130px;

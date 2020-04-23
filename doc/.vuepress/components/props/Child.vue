@@ -1,6 +1,6 @@
 <!-- 子组件 Child.vue -->
 <template>
-  <div class="child">Child: {{myData}}</div>
+  <div class="child-props">Child: {{myData}}</div>
 </template>
 
 <script>
@@ -12,8 +12,8 @@ export default {
 }
 </script>
 
-<style scope>
-.child {
+<style>
+.child-props {
   width: 120px;
   padding: 5px;
   border: 1px solid #ff8c31;

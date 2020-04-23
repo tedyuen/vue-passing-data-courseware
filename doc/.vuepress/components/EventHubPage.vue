@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .parent-event {
   margin-top: 10px;
   width: 300px;

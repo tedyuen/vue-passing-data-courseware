@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style>
 .comp-2 {
   width: 265px;
   padding: 15px;
