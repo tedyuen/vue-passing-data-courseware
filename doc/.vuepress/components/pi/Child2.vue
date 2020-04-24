@@ -1,36 +1,30 @@
 <!-- 子组件 Child.vue -->
 <template>
-  <div class="child-pi">
-    王多鱼: <br>
+  <div class="child-pi-2">
+    王多鱼2: <br>
     {{house}} - {{car}} - {{money}}
-    <!-- <Child2 /> -->
   </div>
 </template>
 
 <script>
-// import Child2 from './Child2.vue'
-
 export default {
-  name: 'Child',
-  // components: {
-  //   Child2
-  // },
+  name: 'Child2',
   inject: {
     house: {
-      default: '没房'
+      default: '没房2'
     },
     car: {
-      default: '没车'
+      default: '没车2'
     },
     money: {
-      default: '没票子'
+      default: '没票子2'
     }
   }
 }
 </script>
 
 <style>
-.child-pi {
+.child-pi-2 {
   width: 150px;
   padding: 5px;
   border: 1px solid #ff8c31;

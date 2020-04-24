@@ -4,6 +4,13 @@
 > 1. 学习 -> 教程 -> 深入了解组件 -> 处理边界情况 -> 依赖注入
 > 2. 学习 -> API -> 选项/组合 -> provide/inject
 
+### 知识要点
+
+1. `provider` 和 `inject` 一般配对使用。
+2. `provider` 中的数据和方法只提供给后代组件。
+3. `inject` 可以设置默认值。
+4. `provider` 值可以被覆盖。
+5. 
 #### 效果
 
 <ClientOnly>

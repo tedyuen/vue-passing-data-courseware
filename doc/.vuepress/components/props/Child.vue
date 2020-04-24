@@ -6,9 +6,7 @@
 <script>
 export default {
   name: 'Child',
-  props: {
-    myData: String
-  }
+  props: ['myData']
 }
 </script>
 

@@ -12,7 +12,7 @@ export default {
   methods: {
     // 事件函数
     doEvent() {
-      this.$emit('myEvent', '参数1', '参数2')
+      this.$emit('changeDate', '新数据')
     }
   }
 }

@@ -18,7 +18,6 @@ import Child1 from './attrs/Child1.vue'
 
 export default {
   name: 'Parent',
-  inheritAttrs: false,
   components: {
     Child1
   },

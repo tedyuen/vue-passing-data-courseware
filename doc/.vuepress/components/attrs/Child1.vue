@@ -20,7 +20,7 @@ export default {
   components: {
     Child2
   },
-  inheritAttrs: false,
+  // inheritAttrs: false,
   props: {
     foo: String,
   },

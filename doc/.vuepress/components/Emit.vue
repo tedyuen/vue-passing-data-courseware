@@ -3,7 +3,7 @@
   <div class="parent-emit">
     <!-- 绑定事件到子组件上 -->
     Parent
-    <Child v-on:myEvent="callEvent"/>
+    <Child v-on:changeDate="parentData += $event"/>
     {{parentData}}
   </div>
 </template>
@@ -19,12 +19,6 @@ export default {
   data() {
     return {
       parentData: ''
-    }
-  },
-  methods: {
-    // 子组件发起通讯后触发的函数
-    callEvent() {
-      this.parentData = [...arguments].join(":")
     }
   }
 }

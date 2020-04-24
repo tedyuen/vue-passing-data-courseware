@@ -1,6 +1,6 @@
 <template>
   <div class="parent-props">
-    Parent
+    Parent: <button @click="text = '三个荤菜'">传值</button>
     <Child v-bind:myData="text"/>
   </div>
 </template>
@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      text: '三个荤菜'
+      text: ''
     }
   }
 }

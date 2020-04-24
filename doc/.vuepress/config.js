@@ -1,20 +1,16 @@
 module.exports = {
-  title: 'Vue2.x 组件通讯',
-  description: 'Vue2.x组件通讯课件文档',
+  title: '组件通讯',
+  description: 'Vue2.x组件通讯课堂笔记',
   base: '/',
   themeConfig: {
     nav: [ // 添加导航栏
       {
-        text: '课程介绍',
+        text: '首页',
         link: '/'
       }
     ],
     sidebar: {
       '/': [
-        {
-          title: '常用组件通讯的方式',
-          path: '/INFO.md'
-        },
         {
           title: '方式解读',
           collapsable: false,
@@ -45,6 +41,10 @@ module.exports = {
             }
           ]
         },
+        {
+          title: '组件通讯知识点归纳',
+          path: '/INFO.md'
+        }
       ]
     },
     sidebarDepth: 2
