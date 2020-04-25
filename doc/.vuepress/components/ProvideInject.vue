@@ -14,9 +14,9 @@ export default {
     Child
   },
   provide: {
-    house: '别墅',
-    car: '跑车',
-    money: '10个亿'
+    // house: '别墅',
+    // car: '跑车',
+    // money: '10个亿'
   }
 }
 </script>

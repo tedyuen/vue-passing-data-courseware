@@ -1,13 +1,5 @@
 ### 二、`v-on` & `$emit`
 
-> 官网路径: 学习 -> 教程 -> 基础 -> 组件基础 -> 监听子组件事件
-
-#### 知识要点
-
-1. `v-on` 可以简写成 `@`
-2. 事件处理函数是一个方法写法
-3. 如何传递多参数
-
 #### 效果
 
 <ClientOnly>
@@ -24,7 +16,7 @@
   <div class="parent-emit">
     <!-- 绑定事件到子组件上 -->
     Parent
-    <Child v-on:changeDate="parentData += $event"/>
+    <Child v-on:changeData="parentData += $event"/>
     {{parentData}}
   </div>
 </template>
@@ -72,7 +64,7 @@ export default {
   methods: {
     // 事件函数
     doEvent() {
-      this.$emit('myEvent', '参数1')
+      this.$emit('changeData', '新数据')
     }
   }
 }
@@ -86,3 +78,17 @@ export default {
 }
 </style>
 ```
+
+::: details 课堂练习
+1. 基于上一章的课堂练习，在父组件创建一个名为Input的组件，包含一个输入框(`input`)和一个名为Add的按钮(`button`)
+2. 当输入框有内容时，点击Add按钮就把输入框的内容添加到List中。
+3. `List`组件中的每一列表项后，添加一个名为Del的按钮。
+4. 当点击Del按钮是，则在List中把这一项数据删除。
+
+效果如下：
+
+<ClientOnly>
+  <EmitPractice />
+</ClientOnly>
+
+:::

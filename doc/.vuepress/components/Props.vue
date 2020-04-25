@@ -1,7 +1,7 @@
 <template>
   <div class="parent-props">
-    Parent: <button @click="text = '三个荤菜'">传值</button>
-    <Child v-bind:myData="text"/>
+    Parent: 
+    <Child myData="父组件数据"/>
   </div>
 </template>
 
@@ -12,11 +12,6 @@ export default {
   name: 'Parent',
   components: {
     Child
-  },
-  data() {
-    return {
-      text: ''
-    }
   }
 }
 </script>
@@ -24,7 +19,7 @@ export default {
 <style>
 .parent-props {
   margin-top: 10px;
-  width: 130px;
+  width: 140px;
   padding: 10px;
   border: 1px solid #00e09e;
 }

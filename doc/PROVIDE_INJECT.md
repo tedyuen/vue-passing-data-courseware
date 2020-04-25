@@ -10,7 +10,7 @@
 2. `provider` 中的数据和方法只提供给后代组件。
 3. `inject` 可以设置默认值。
 4. `provider` 值可以被覆盖。
-5. 
+
 #### 效果
 
 <ClientOnly>

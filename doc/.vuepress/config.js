@@ -50,6 +50,6 @@ module.exports = {
     sidebarDepth: 2
   },
   markdown: {
-    lineNumber: true
-  },
+    lineNumbers: true
+  }
 }

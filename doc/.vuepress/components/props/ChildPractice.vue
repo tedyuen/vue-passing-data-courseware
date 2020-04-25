@@ -1,12 +1,14 @@
 <!-- 子组件 Child.vue -->
 <template>
-  <div class="child-props">Child: {{myData}}</div>
+  <ul>
+    <li v-for="(item, index) in list" :key="index">{{item}}</li>
+  </ul>
 </template>
 
 <script>
 export default {
   name: 'Child',
-  props: ['myData']
+  props: ['list']
 }
 </script>
 

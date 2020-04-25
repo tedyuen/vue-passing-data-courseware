@@ -1,18 +1,5 @@
 ### 一、`Prop` 标签属性传递
 
-> 官网路径: 学习 -> 教程 -> 基础 -> 组件基础 -> 通过 `Prop` 向子组件传递参数
-
-#### 知识要点
-
-1. 修改父组件text会触发子组件更新
-2. `v-bind` 可以缩写成 `:`
-3. 静态属性也可以通过这个方式传递
-4. 子组件不可修改props，需要通过 `computed` 来处理。
-5. 属性声明中可以添加类型检测
-6. 属性声明中可以设置默认值
-7. 多个属性的写法
-8. 父组件没传值，props的值是什么? (undefined)
-
 #### 效果
 
 <ClientOnly>
@@ -24,10 +11,11 @@
 1. **父组件**
 
 ```html
+<!-- 父组件 -->
 <template>
   <div class="parent-props">
-    Parent: <button @click="text = '三个荤菜'">传值</button>
-    <Child v-bind:myData="text"/>
+    Parent: 
+    <Child myData="text"/>
   </div>
 </template>
 
@@ -38,11 +26,6 @@ export default {
   name: 'Parent',
   components: {
     Child
-  },
-  data() {
-    return {
-      text: ''
-    }
   }
 }
 </script>
@@ -50,7 +33,7 @@ export default {
 <style>
 .parent-props {
   margin-top: 10px;
-  width: 130px;
+  width: 140px;
   padding: 10px;
   border: 1px solid #00e09e;
 }
@@ -74,9 +57,34 @@ export default {
 
 <style>
 .child-props {
-  width: 120px;
+  width: 130px;
   padding: 5px;
   border: 1px solid #ff8c31;
 }
 </style>
 ```
+
+::: details 课堂练习
+在父组件中添加下列响应式的列表数据，创建一个名为 `List` 的组件，包含以 `ul > li` 组成的列表子组件，并显示该列表数据中的内容。
+
+提示：用指令 `v-if` 来实现列表循环
+
+```js
+data() {
+  return {
+    list: [
+      '张三',
+      '李四',
+      '王五'
+    ]
+  }
+}
+```
+
+效果如下：
+
+<ClientOnly>
+  <PropsPractice />
+</ClientOnly>
+
+:::
