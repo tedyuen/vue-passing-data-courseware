@@ -1,6 +1,6 @@
 <template>
   <div class="parent-props">
-    Parent: 
+    Parent:
     <Child myData="父组件数据"/>
   </div>
 </template>

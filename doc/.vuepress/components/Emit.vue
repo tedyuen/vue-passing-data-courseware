@@ -3,7 +3,7 @@
   <div class="parent-emit">
     <!-- 绑定事件到子组件上 -->
     Parent
-    <Child v-on:changeDate="parentData += $event"/>
+    <Child v-on:changeData="parentData += $event"/>
     {{parentData}}
   </div>
 </template>

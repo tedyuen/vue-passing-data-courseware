@@ -1,4 +1,4 @@
-### 一、`Prop` 标签属性传递
+### 一、属性传递 `v-bind` & `Prop` (父 -> 子)
 
 #### 效果
 
@@ -15,7 +15,7 @@
 <template>
   <div class="parent-props">
     Parent: 
-    <Child myData="text"/>
+    <Child myData="父组件数据"/>
   </div>
 </template>
 
@@ -67,7 +67,9 @@ export default {
 ::: details 课堂练习
 在父组件中添加下列响应式的列表数据，创建一个名为 `List` 的组件，包含以 `ul > li` 组成的列表子组件，并显示该列表数据中的内容。
 
-提示：用指令 `v-if` 来实现列表循环
+提示：
+1. 用指令 `v-if` 来实现列表
+2. 数组数据的类型是 `Array`
 
 ```js
 data() {

@@ -1,6 +1,6 @@
 module.exports = {
   title: '组件通讯',
-  description: 'Vue2.x组件通讯课堂笔记',
+  description: 'Vue2.x组件通讯课件',
   base: '/',
   themeConfig: {
     nav: [ // 添加导航栏

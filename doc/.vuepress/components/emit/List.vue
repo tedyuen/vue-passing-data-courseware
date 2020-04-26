@@ -11,7 +11,9 @@
 <script>
 export default {
   name: "Child",
-  props: ["list"],
+  props: {
+    list: Array
+  },
   methods: {
     doDel(index) {
       this.$emit('delItem', index)
